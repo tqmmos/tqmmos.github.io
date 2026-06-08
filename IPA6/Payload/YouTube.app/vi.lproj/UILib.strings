@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>activity_cell.ad</key>
+	<string>Ad</string>
+	<key>channel.subscribers.one</key>
+	<string>%@ người đăng ký</string>
+	<key>channel.subscribers.other</key>
+	<string>%@ người đăng ký</string>
+	<key>channel.videos.one</key>
+	<string>%@ video</string>
+	<key>channel.videos.other</key>
+	<string>%@ videos</string>
+	<key>comment_cell.access</key>
+	<string>Bình luận</string>
+	<key>date.days_ago.one</key>
+	<string>%d ngày trước</string>
+	<key>date.days_ago.other</key>
+	<string>%d ngày trước</string>
+	<key>date.hours_ago.one</key>
+	<string>%d giờ trước</string>
+	<key>date.hours_ago.other</key>
+	<string>%d giờ trước</string>
+	<key>date.minutes_ago.one</key>
+	<string>%d phút trước</string>
+	<key>date.minutes_ago.other</key>
+	<string>%d phút trước</string>
+	<key>date.months_ago.one</key>
+	<string>%d tháng trước</string>
+	<key>date.months_ago.other</key>
+	<string>%d tháng trước</string>
+	<key>date.seconds_ago.one</key>
+	<string>%d giây trước</string>
+	<key>date.seconds_ago.other</key>
+	<string>%d giây trước</string>
+	<key>date.weeks_ago.one</key>
+	<string>%d tuần trước</string>
+	<key>date.weeks_ago.other</key>
+	<string>%d tuần trước</string>
+	<key>date.years_ago.one</key>
+	<string>%d năm trước</string>
+	<key>date.years_ago.other</key>
+	<string>%d năm trước</string>
+	<key>error.add_comment</key>
+	<string>Lỗi khi thêm bình luận</string>
+	<key>error.authentication</key>
+	<string>Lỗi xác thực</string>
+	<key>error.lightweight_account</key>
+	<string>Vui lòng truy cập youtube.com/create_channel để tạo kênh YouTube.</string>
+	<key>error.subscribe</key>
+	<string>Lỗi khi đăng ký kênh</string>
+	<key>error.unsubscribe</key>
+	<string>Lỗi khi hủy đăng ký kênh</string>
+	<key>event_cell.access</key>
+	<string>Mục nhập hoạt động người dùng</string>
+	<key>feed.loading.access</key>
+	<string>Đang tải…</string>
+	<key>feed_table_view.edit.done</key>
+	<string>Xong</string>
+	<key>feed_table_view.edit.edit</key>
+	<string>Sửa</string>
+	<key>playlist_cell.access</key>
+	<string>Mục trong danh sách phát</string>
+	<key>playlist_cell.size.one</key>
+	<string>%@ video</string>
+	<key>playlist_cell.size.other</key>
+	<string>%@ videos</string>
+	<key>pull_refresh.drag</key>
+	<string>Kéo xuống để làm mới</string>
+	<key>pull_refresh.release</key>
+	<string>Thả ra để làm mới</string>
+	<key>purchase_cell.access</key>
+	<string>Mua vé vào cửa</string>
+	<key>search.append.access</key>
+	<string>Thêm gợi ý vào trường tìm kiếm</string>
+	<key>signin.loading</key>
+	<string>Đang tải…</string>
+	<key>status.error</key>
+	<string>Lỗi khi tải
+Nhấn để thử lại</string>
+	<key>video_cell.access</key>
+	<string>Video dự thi</string>
+	<key>video_info.ad_call_to_action</key>
+	<string>Truy cập trang web của nhà quảng cáo</string>
+	<key>video_info.bought</key>
+	<string>Mua</string>
+	<key>video_info.by_display_name</key>
+	<string>%@</string>
+	<key>video_info.expired</key>
+	<string>Hết hạn</string>
+	<key>video_info.expires_days.one</key>
+	<string>%d ngày</string>
+	<key>video_info.expires_days.other</key>
+	<string>%d ngày</string>
+	<key>video_info.expires_hours.one</key>
+	<string>%d giờ</string>
+	<key>video_info.expires_hours.other</key>
+	<string>%d giờ</string>
+	<key>video_info.expires_in</key>
+	<string>Hết hạn sau</string>
+	<key>video_info.expires_soon</key>
+	<string>Hết hạn trong vòng 1 giờ!</string>
+	<key>video_info.live_badge</key>
+	<string>Trực tiếp</string>
+	<key>video_info.live_viewers.one</key>
+	<string>%@ đang xem</string>
+	<key>video_info.live_viewers.other</key>
+	<string>%@ đang xem</string>
+	<key>video_info.minutes_abbreviation</key>
+	<string>phút</string>
+	<key>video_info.num_views.one</key>
+	<string>%@ lượt xem</string>
+	<key>video_info.num_views.other</key>
+	<string>%@ lượt xem</string>
+	<key>video_info.streamed_by_user.access</key>
+	<string>Được phát trực tuyến bởi %@</string>
+	<key>video_info.subscribe</key>
+	<string>Đăng ký</string>
+	<key>video_info.subscribe.access</key>
+	<string>Hãy đăng ký kênh này.</string>
+	<key>video_info.subscribe.loading.access</key>
+	<string>Đang tải…</string>
+	<key>video_info.subscribed</key>
+	<string>Đã đăng ký</string>
+	<key>video_info.subscribed.access</key>
+	<string>Hủy đăng ký kênh này.</string>
+	<key>video_info.unsubscribe</key>
+	<string>Hủy đăng ký?</string>
+	<key>video_info.uploaded_by_user.access</key>
+	<string>Được tải lên bởi %@</string>
+	<key>watch.comments.clear.access</key>
+	<string>Bình luận rõ ràng</string>
+	<key>watch.comments.input_hint</key>
+	<string>Thêm bình luận.</string>
+</dict>
+</plist>

@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>account.capture</key>
+	<string>Capture</string>
+	<key>account.choose_channel.cancel</key>
+	<string>Huỷ</string>
+	<key>account.choose_channel.done</key>
+	<string>Xong</string>
+	<key>account.choose_channel.heading</key>
+	<string>Sử dụng YouTube như…</string>
+	<key>account.choose_channel.title</key>
+	<string>Chọn kênh</string>
+	<key>account.close_disclosure.access</key>
+	<string>Đóng thông tin tài khoản</string>
+	<key>account.favorites</key>
+	<string>Mục yêu thích</string>
+	<key>account.open_disclosure.access</key>
+	<string>Công khai tài khoản</string>
+	<key>account.playlists</key>
+	<string>Danh sách phát</string>
+	<key>account.playlists.edit_error</key>
+	<string>Chỉnh sửa danh sách phát không thành công</string>
+	<key>account.purchases</key>
+	<string>Mua hàng</string>
+	<key>account.upgrade_to_gplus_channel.cancel</key>
+	<string>Huỷ</string>
+	<key>account.upgrade_to_gplus_channel.create_channel</key>
+	<string>Tạo</string>
+	<key>account.upgrade_to_gplus_channel.description</key>
+	<string>Tạo kênh YouTube mới cho các video và danh sách phát công khai của bạn.</string>
+	<key>account.upgrade_to_gplus_channel.heading</key>
+	<string>Sử dụng YouTube như…</string>
+	<key>account.upgrade_to_gplus_channel.more_choices</key>
+	<string>Để sử dụng tên doanh nghiệp hoặc tên khác, hãy tạo kênh của bạn tại %@</string>
+	<key>account.upgrade_to_gplus_channel.name_subtitle</key>
+	<string>Từ hồ sơ Google+ của bạn</string>
+	<key>account.upgrade_to_gplus_channel.title</key>
+	<string>Tạo kênh</string>
+	<key>account.uploads</key>
+	<string>Tải lên</string>
+	<key>account.watch_history</key>
+	<string>Lịch sử</string>
+	<key>account.watch_history.clear</key>
+	<string>Xoá</string>
+	<key>account.watch_history.clear_alert.cancel</key>
+	<string>Huỷ</string>
+	<key>account.watch_history.clear_alert.confirm</key>
+	<string>Xoá</string>
+	<key>account.watch_history.clear_alert.message</key>
+	<string>Bạn có chắc chắn muốn xóa lịch sử theo dõi không?</string>
+	<key>account.watch_history.clear_alert.title</key>
+	<string>YouTube</string>
+	<key>account.watch_later</key>
+	<string>Xem sau</string>
+	<key>action_bar.dislike.access</key>
+	<string>Không thích</string>
+	<key>action_bar.like.access</key>
+	<string>Thích</string>
+	<key>action_bar.more.access</key>
+	<string>Xem thêm</string>
+	<key>adult_flow.confirm_alert.cancel</key>
+	<string>Huỷ</string>
+	<key>adult_flow.confirm_alert.confirm</key>
+	<string>Xác nhận</string>
+	<key>adult_flow.confirm_alert.message</key>
+	<string>Video này có thể chứa nội dung không phù hợp với một số người dùng, theo đánh dấu của người dùng YouTube.
+
+Bằng cách chọn 'Xác nhận', bạn đồng ý rằng tất cả các video bị cộng đồng YouTube đánh dấu sẽ được hiển thị trên tài khoản này.</string>
+	<key>adult_flow.confirm_alert.title</key>
+	<string>YouTube</string>
+	<key>adult_flow.login_alert.cancel</key>
+	<string>Huỷ</string>
+	<key>adult_flow.login_alert.login</key>
+	<string>Đăng nhập</string>
+	<key>adult_flow.login_alert.message</key>
+	<string>Video này có thể chứa nội dung không phù hợp với một số người dùng, theo đánh dấu của người dùng YouTube.
+
+Để xem video này, vui lòng xác nhận bạn từ 18 tuổi trở lên bằng cách đăng nhập.</string>
+	<key>adult_flow.login_alert.title</key>
+	<string>YouTube</string>
+	<key>capture.promotion.button</key>
+	<string>Tải ứng dụng miễn phí</string>
+	<key>capture.promotion.description</key>
+	<string>Ghi hình, chỉnh sửa và tải video lên bằng YouTube Capture.</string>
+	<key>channel.activity</key>
+	<string>Hoạt động</string>
+	<key>channel.playlists</key>
+	<string>Danh sách phát</string>
+	<key>channel.videos</key>
+	<string>Videos</string>
+	<key>channel_store.title</key>
+	<string>Thêm kênh</string>
+	<key>create_playlist.name.label</key>
+	<string>Tên</string>
+	<key>create_playlist.name.placeholder</key>
+	<string>Tên danh sách phát</string>
+	<key>create_playlist.privacy.private</key>
+	<string>Riêng tư</string>
+	<key>create_playlist.privacy.public</key>
+	<string>Công khai</string>
+	<key>create_playlist.title</key>
+	<string>Tạo danh sách phát</string>
+	<key>error.account.favorites.edit</key>
+	<string>Chỉnh sửa mục yêu thích không thành công.</string>
+	<key>error.account.playlist.edit</key>
+	<string>Chỉnh sửa danh sách phát thất bại.</string>
+	<key>error.account.uploads.edit</key>
+	<string>Chỉnh sửa tệp tải lên thất bại.</string>
+	<key>error.account.watch_later.edit</key>
+	<string>Chỉnh sửa mục Xem sau không thành công.</string>
+	<key>error.add_to_favorites</key>
+	<string>Lỗi khi thêm video vào mục Yêu thích</string>
+	<key>error.add_to_playlist</key>
+	<string>Lỗi khi thêm vào danh sách phát</string>
+	<key>error.add_to_watch_later</key>
+	<string>Lỗi khi thêm vào Xem sau</string>
+	<key>error.artist</key>
+	<string>Lỗi khi tải nghệ sĩ</string>
+	<key>error.capture.promotion.store</key>
+	<string>Không thể mở App Store.</string>
+	<key>error.channel</key>
+	<string>Lỗi khi tải kênh</string>
+	<key>error.clear_watch_history</key>
+	<string>Không thể xóa lịch sử theo dõi của bạn</string>
+	<key>error.create_playlist</key>
+	<string>Lỗi khi tạo danh sách phát</string>
+	<key>error.dislike</key>
+	<string>Lỗi khi không thích video</string>
+	<key>error.external_url</key>
+	<string>Lỗi khi tải liên kết YouTube</string>
+	<key>error.flag</key>
+	<string>Video báo lỗi</string>
+	<key>error.like</key>
+	<string>Lỗi khi thích video</string>
+	<key>error.my_profile</key>
+	<string>Lỗi khi tải hồ sơ người dùng của bạn</string>
+	<key>error.paid_content_subscribe</key>
+	<string>Bạn chỉ có thể đăng ký kênh trả phí này trên máy tính của mình.</string>
+	<key>error.paid_content_unsubscribe</key>
+	<string>Bạn chỉ có thể hủy đăng ký kênh trả phí này trên máy tính của mình.</string>
+	<key>error.underage</key>
+	<string>Không dành cho người dùng dưới tuổi vị thành niên.</string>
+	<key>error.unknown_age</key>
+	<string>Tính năng này không khả dụng đối với người dùng có tuổi không xác định. Vui lòng cập nhật ngày sinh của bạn.</string>
+	<key>error.video</key>
+	<string>Lỗi khi tải video</string>
+	<key>filters.duration</key>
+	<string>Khoảng thời gian</string>
+	<key>filters.duration.all</key>
+	<string>Tất cả</string>
+	<key>filters.duration.long</key>
+	<string>Dài (&gt;20 phút)</string>
+	<key>filters.duration.short</key>
+	<string>Ngắn (&lt;4 phút)</string>
+	<key>filters.features</key>
+	<string>Tính năng</string>
+	<key>filters.features.closed_captions</key>
+	<string>Chỉ có phụ đề</string>
+	<key>filters.refine.access</key>
+	<string>Tinh chỉnh</string>
+	<key>filters.sort_by</key>
+	<string>Sắp xếp theo</string>
+	<key>filters.sort_by.rating</key>
+	<string>Xếp hạng</string>
+	<key>filters.sort_by.relevance</key>
+	<string>liên quan</string>
+	<key>filters.sort_by.upload_date</key>
+	<string>Ngày tải lên</string>
+	<key>filters.sort_by.view_count</key>
+	<string>Lượt xem</string>
+	<key>filters.title</key>
+	<string>Tùy chọn tìm kiếm</string>
+	<key>filters.upload_date</key>
+	<string>Ngày tải lên</string>
+	<key>filters.upload_date.anytime</key>
+	<string>Bất cứ lúc nào</string>
+	<key>filters.upload_date.this_month</key>
+	<string>Tháng này</string>
+	<key>filters.upload_date.this_week</key>
+	<string>Tuần này</string>
+	<key>filters.upload_date.today</key>
+	<string>Hôm nay</string>
+	<key>flag.dialog.cancel</key>
+	<string>Không</string>
+	<key>flag.dialog.confirm</key>
+	<string>Có</string>
+	<key>flag.dialog.message</key>
+	<string>Bạn chắc chắn chứ?</string>
+	<key>flag.dialog.title</key>
+	<string>Bạn sắp báo cáo video này là không phù hợp.</string>
+	<key>guide.account</key>
+	<string>Đăng nhập</string>
+	<key>guide.account_loggedin.access</key>
+	<string>Tài khoản của bạn</string>
+	<key>guide.channel_store</key>
+	<string>Thêm kênh</string>
+	<key>guide.live</key>
+	<string>Trực tiếp</string>
+	<key>guide.loading_now_playing</key>
+	<string>Đang tải…</string>
+	<key>guide.popular</key>
+	<string>Phổ biến</string>
+	<key>guide.promo_signin.landscape</key>
+	<string>Đăng nhập để truy cập tất cả video và kênh bạn đã đăng ký.</string>
+	<key>guide.promo_signin.portrait</key>
+	<string>Vuốt màn hình và đăng nhập để truy cập tất cả video và kênh bạn đã đăng ký.</string>
+	<key>guide.settings</key>
+	<string>Cài đặt</string>
+	<key>guide.subscriptions</key>
+	<string>Các đăng ký của tôi</string>
+	<key>guide.tv_queue</key>
+	<string>Hàng đợi TV</string>
+	<key>guide.what_to_watch</key>
+	<string>Trang chủ</string>
+	<key>guide_section.account</key>
+	<string>Tài khoản</string>
+	<key>guide_section.channels</key>
+	<string>Kênh</string>
+	<key>guide_section.from_youtube</key>
+	<string>Từ YouTube</string>
+	<key>guide_section.now_playing</key>
+	<string>Đang phát</string>
+	<key>mdx.add_button</key>
+	<string>Thêm</string>
+	<key>mdx.cancel_button</key>
+	<string>Huỷ</string>
+	<key>mdx.default_screen_name</key>
+	<string>TV %d</string>
+	<key>mdx.restricted</key>
+	<string>Video này không thể phát trên TV.</string>
+	<key>mdx.screen_pairing.step_1</key>
+	<string>Hãy mở ứng dụng YouTube trên TV hoặc máy chơi game của bạn.</string>
+	<key>mdx.screen_pairing.step_2</key>
+	<string>Trong mục "Cài đặt", tìm tùy chọn "Ghép nối thiết bị".</string>
+	<key>mdx.screen_pairing.step_3</key>
+	<string>Nhập mã ghép nối hiển thị trên TV vào ô phía trên.</string>
+	<key>mdx.screen_pairing.steps_title</key>
+	<string>Phát video trên TV của bạn!</string>
+	<key>mdx.screen_pairing.success.description</key>
+	<string>Bắt đầu xem video trên TV của bạn ngay bây giờ.</string>
+	<key>mdx.screen_pairing.success.title</key>
+	<string>Thêm TV thành công!</string>
+	<key>mdx.screen_pairing.title</key>
+	<string>Thêm TV</string>
+	<key>mdx.screen_picker.cancel</key>
+	<string>Huỷ</string>
+	<key>mdx.screen_picker_button</key>
+	<string>YouTube TV</string>
+	<key>more_menu.ad_channel</key>
+	<string>%@ Kênh</string>
+	<key>more_menu.ad_share</key>
+	<string>Chia sẻ quảng cáo video</string>
+	<key>more_menu.ad_site</key>
+	<string>Truy cập trang web</string>
+	<key>more_menu.cancel</key>
+	<string>Huỷ</string>
+	<key>more_menu.create_playlist</key>
+	<string>Tạo danh sách phát mới…</string>
+	<key>more_menu.favorites</key>
+	<string>Thêm vào mục yêu thích</string>
+	<key>more_menu.favorites.success</key>
+	<string>Đã thêm vào mục yêu thích</string>
+	<key>more_menu.flag</key>
+	<string>Báo cáo</string>
+	<key>more_menu.flag.success</key>
+	<string>Đã báo cáo</string>
+	<key>more_menu.load_more</key>
+	<string>Tải thêm…</string>
+	<key>more_menu.loading</key>
+	<string>Đang tải…</string>
+	<key>more_menu.playlist</key>
+	<string>Thêm vào danh sách phát</string>
+	<key>more_menu.playlist.success</key>
+	<string>Đã thêm vào danh sách phát</string>
+	<key>more_menu.share</key>
+	<string>Chia sẻ</string>
+	<key>more_menu.tv_queue.add</key>
+	<string>Thêm vào danh sách xem TV</string>
+	<key>more_menu.tv_queue.add.success</key>
+	<string>Đã thêm vào danh sách chờ TV</string>
+	<key>more_menu.tv_queue.remove</key>
+	<string>Xóa khỏi danh sách chờ TV</string>
+	<key>more_menu.tv_queue.remove.success</key>
+	<string>Removed from TV Queue</string>
+	<key>more_menu.watch_later</key>
+	<string>Thêm vào danh sách xem sau</string>
+	<key>more_menu.watch_later.success</key>
+	<string>Đã thêm vào danh sách xem sau</string>
+	<key>nav_bar.back.access</key>
+	<string>Trở về</string>
+	<key>nav_bar.cancel</key>
+	<string>Huỷ</string>
+	<key>nav_bar.done</key>
+	<string>Xong</string>
+	<key>nav_bar.guide.access</key>
+	<string>Hướng dẫn</string>
+	<key>nav_bar.logo.access</key>
+	<string>YouTube</string>
+	<key>nav_bar.logo.hint.access</key>
+	<string>Mở hướng dẫn.</string>
+	<key>nav_bar.search.access</key>
+	<string>Tìm kiếm</string>
+	<key>playlist_header.size.one</key>
+	<string>video</string>
+	<key>playlist_header.size.other</key>
+	<string>videos</string>
+	<key>playlist_picker.picker.access</key>
+	<string>Danh sách phát có sẵn</string>
+	<key>search.channels</key>
+	<string>Kênh</string>
+	<key>search.clear.access</key>
+	<string>Xóa tìm kiếm</string>
+	<key>search.hint</key>
+	<string>YouTube</string>
+	<key>search.suggestions</key>
+	<string>Đề xuất</string>
+	<key>search.suggestions.access</key>
+	<string>Gợi ý tìm kiếm</string>
+	<key>search.videos</key>
+	<string>Videos</string>
+	<key>search.voice.access</key>
+	<string>Tìm kiếm bằng giọng nói</string>
+	<key>settings.about</key>
+	<string>Giới thiệu</string>
+	<key>settings.about.open_source_licences</key>
+	<string>Giấy phép mã nguồn mở</string>
+	<key>settings.about.privacy_policy</key>
+	<string>Chính sách bảo mật</string>
+	<key>settings.about.send_feedback</key>
+	<string>Gửi phản hồi</string>
+	<key>settings.about.terms_of_service</key>
+	<string>Điều khoản dịch vụ</string>
+	<key>settings.about.version</key>
+	<string>Phiên bản</string>
+	<key>settings.help</key>
+	<string>Trợ giúp</string>
+	<key>settings.no</key>
+	<string>Không</string>
+	<key>settings.safe_search.moderate</key>
+	<string>Vừa phải</string>
+	<key>settings.safe_search.none</key>
+	<string>Không lọc</string>
+	<key>settings.safe_search.strict</key>
+	<string>Nghiêm ngặt</string>
+	<key>settings.title</key>
+	<string>Cài đặt</string>
+	<key>settings.yes</key>
+	<string>Có</string>
+	<key>settings.youtube</key>
+	<string>YouTube</string>
+	<key>settings.youtube.open_links_in_chrome</key>
+	<string>Mở liên kết bằng Chrome</string>
+	<key>settings.youtube.pairing</key>
+	<string>TV kết nối</string>
+	<key>settings.youtube.pairing.code_label</key>
+	<string>Nhập mã ghép nối</string>
+	<key>settings.youtube.safesearch</key>
+	<string>Lọc tìm kiếm an toàn</string>
+	<key>settings.youtube.sign_out</key>
+	<string>Đăng xuất</string>
+	<key>settings.youtube.sign_out.confirm.cancel</key>
+	<string>Huỷ</string>
+	<key>settings.youtube.sign_out.confirm.message</key>
+	<string>Bạn có chắc chắn muốn đăng xuất không?</string>
+	<key>settings.youtube.sign_out.confirm.sign_out</key>
+	<string>Đăng xuất</string>
+	<key>settings.youtube.sign_out.confirm.title</key>
+	<string>YouTube</string>
+	<key>share_menu.cancel</key>
+	<string>Huỷ</string>
+	<key>share_menu.copy</key>
+	<string>Sao chép liên kết</string>
+	<key>share_menu.error</key>
+	<string>Lỗi</string>
+	<key>share_menu.facebook</key>
+	<string>Facebook</string>
+	<key>share_menu.googleplus</key>
+	<string>Google+</string>
+	<key>share_menu.mail</key>
+	<string>Email</string>
+	<key>share_menu.share_text</key>
+	<string>Hãy xem video này trên YouTube:</string>
+	<key>share_menu.sms</key>
+	<string>Message</string>
+	<key>share_menu.success</key>
+	<string>Thành công</string>
+	<key>share_menu.twitter</key>
+	<string>Twitter</string>
+	<key>status.empty.category</key>
+	<string>Danh mục này không có video gần đây</string>
+	<key>status.empty.channel_events</key>
+	<string>Kênh này không có hoạt động gần đây.</string>
+	<key>status.empty.channel_playlists</key>
+	<string>Kênh này không có danh sách phát.</string>
+	<key>status.empty.channel_results</key>
+	<string>Không có kết quả kênh nào</string>
+	<key>status.empty.channel_store</key>
+	<string>Không tìm thấy kênh được đề xuất nào.</string>
+	<key>status.empty.channel_videos</key>
+	<string>Kênh này không có video nào.</string>
+	<key>status.empty.comments</key>
+	<string>Video này không có bình luận.</string>
+	<key>status.empty.comments_disabled</key>
+	<string>Chức năng bình luận đã bị vô hiệu hóa.</string>
+	<key>status.empty.live</key>
+	<string>Không tìm thấy sự kiện trực tiếp nào.</string>
+	<key>status.empty.my_favorites</key>
+	<string>Bạn chưa thêm video nào vào mục yêu thích.</string>
+	<key>status.empty.my_playlists</key>
+	<string>Bạn chưa tạo bất kỳ danh sách phát nào.</string>
+	<key>status.empty.my_purchases</key>
+	<string>Bạn chưa mua bất kỳ video nào.</string>
+	<key>status.empty.my_uploads</key>
+	<string>Bạn chưa tải lên video nào</string>
+	<key>status.empty.my_watch_history</key>
+	<string>Lịch sử duyệt web của bạn trống.</string>
+	<key>status.empty.my_watch_later</key>
+	<string>Bạn chưa thêm video nào vào mục Xem sau.</string>
+	<key>status.empty.playlist</key>
+	<string>Danh sách phát này trống</string>
+	<key>status.empty.related_videos</key>
+	<string>Không tìm thấy video được đề xuất nào.</string>
+	<key>status.empty.river</key>
+	<string>Các cập nhật từ kênh của bạn sẽ xuất hiện ở đây. Hãy bắt đầu bằng cách thêm một vài kênh.</string>
+	<key>status.empty.tv_queue</key>
+	<string>Hàng đợi TV trống</string>
+	<key>status.empty.video_results</key>
+	<string>Không có kết quả video nào</string>
+	<key>update.close</key>
+	<string>Thoát</string>
+	<key>update.dialog</key>
+	<string>Bạn có muốn cập nhật không?</string>
+	<key>update.dialog.force</key>
+	<string>Bạn cần cập nhật để tiếp tục.</string>
+	<key>update.later</key>
+	<string>Không phải bây giờ</string>
+	<key>update.now</key>
+	<string>Cập nhật</string>
+	<key>update.title</key>
+	<string>Đã có bản cập nhật</string>
+	<key>update.title.force</key>
+	<string>Cần cập nhật</string>
+	<key>video_info.artist</key>
+	<string>Nghệ sĩ</string>
+	<key>video_info.dislikes.one</key>
+	<string>Không thích</string>
+	<key>video_info.dislikes.other</key>
+	<string>Không thích</string>
+	<key>video_info.likes.one</key>
+	<string>Thích</string>
+	<key>video_info.likes.other</key>
+	<string>Thích</string>
+	<key>video_info.live_viewers.one</key>
+	<string>xem</string>
+	<key>video_info.live_viewers.other</key>
+	<string>xem</string>
+	<key>video_info.published_date</key>
+	<string>Đã xuất bản %@</string>
+	<key>video_info.rating_disabled</key>
+	<string>Chức năng đánh giá đã bị vô hiệu hóa cho video này.</string>
+	<key>video_info.related_artist.access</key>
+	<string>Nghệ sĩ liên quan</string>
+	<key>video_info.views.one</key>
+	<string>Lượt xem</string>
+	<key>video_info.views.other</key>
+	<string>Lượt xem</string>
+	<key>watch.artist_bio</key>
+	<string>Tiểu sử nghệ sĩ</string>
+	<key>watch.branding.access</key>
+	<string>Xây dựng thương hiệu</string>
+	<key>watch.channel.access</key>
+	<string>Kênh</string>
+	<key>watch.channel.hint.access</key>
+	<string>Điều hướng đến màn hình của kênh này.</string>
+	<key>watch.comments</key>
+	<string>Bình luận</string>
+	<key>watch.music_videos</key>
+	<string>Video âm nhạc</string>
+	<key>watch.now_playing</key>
+	<string>Giới thiệu</string>
+	<key>watch.related_artists</key>
+	<string>Các nghệ sĩ liên quan</string>
+	<key>watch.related_videos</key>
+	<string>Đề xuất</string>
+</dict>
+</plist>
