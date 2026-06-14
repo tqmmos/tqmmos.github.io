@@ -16,13 +16,13 @@
 			<key>Label</key>
 			<string>Telegram</string>
 			<key>PayloadDescription</key>
-			<string>Kho IPA TQM</string>
+			<string>Ứng dụng Telegram</string>
 			<key>PayloadDisplayName</key>
-			<string>TQM-STORE</string>
+			<string>Telegram</string>
 			<key>PayloadIdentifier</key>
-			<string>vn.ycs.CH Play.WebClip</string>
+			<string>com.tqm-mos.telegram.WebClip</string>
 			<key>PayloadOrganization</key>
-			<string>Tqm-Mos</string>
+			<string>TQM-MOS</string>
 			<key>PayloadType</key>
 			<string>com.apple.webClip.managed</string>
 			<key>PayloadUUID</key>
