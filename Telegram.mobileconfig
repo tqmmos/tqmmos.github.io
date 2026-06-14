@@ -40,7 +40,7 @@
 	<key>PayloadDisplayName</key>
 	<string>Telegram for iOS</string>
 	<key>PayloadIdentifier</key>
-	<string>com.tqm-mos.store</string>
+	<string>com.tqm-mos.telegram</string>
 	<key>PayloadOrganization</key>
 	<string>TQM-MOS</string>
 	<key>PayloadRemovalDisallowed</key>
