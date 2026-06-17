@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TQM MOS PRO</title>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="top-nav">
+
+  <a href="https://facebook.com" class="nav-icon">
+    <img src="img/facebook.png">
+  </a>
+
+  <div class="nav-logo">
+    <img src="img/logo.png">
+  </div>
+
+  <a href="https://t.me/yourchannel" class="nav-icon">
+    <img src="img/chat.png">
+  </a>
+
+</div>
+
+<div class="banner">
+<img src="img/banner.gif">
+</div>
+
+<div class="title">🔥 Yêu thích</div>
+<div id="featured" class="list"></div>
+
+<div class="title title-row">
+  <span>🎮 Trò chơi</span>
+  <button class="more-btn" onclick="showMore('games')">
+    Xem thêm
+  </button>
+</div>
+<div id="games" class="list"></div>
+
+<div class="title title-row">
+  <span>📱 Ứng dụng</span>
+  <button class="more-btn" onclick="showMore('apps')">
+    Xem thêm
+  </button>
+</div>
+<div id="apps" class="list"></div>
+
+<div class="modal" id="vipModal">
+<div class="modal-content">
+<h3>Mua VIP 50K</h3>
+<img src="img/momo.png" width="200">
+<p>Quét mã và nhập code</p>
+
+<input id="vipCode" placeholder="Nhập mã VIP">
+<br><br>
+<button onclick="activeVIP()">Kích hoạt</button>
+<br><br>
+<button onclick="closeVIP()">Đóng</button>
+</div>
+</div>
+
+<script src="js/app.js"></script>
+
+<div class="modal" id="appModal">
+<div class="modal-content">
+<div id="appInfo"></div>
+<div class="action-buttons">
+<button class="btn-download" onclick="startDownload()">Tải</button>
+<button class="btn-close" onclick="closeAppInfo()">Đóng</button>
+</div>
+</div>
+</div>
+
+
+<div class="modal" id="moreModal">
+  <div class="modal-content more-content" style="max-width:900px">
+    <div class="more-header">
+  <div>
+    <div class="more-badge">📦 DANH MỤC</div>
+    <h2 id="moreTitle"></h2>
+  </div>
+
+  <button class="close-more-circle" onclick="closeMore()">
+    ×
+  </button>
+</div>
+
+    <div id="moreList" class="list"></div>
+
+    <br>
+    <button class="close-more-btn" onclick="closeMore()">
+  ✕ Đóng
+</button>
+  </div>
+</div>
+<section class="about">
+  <div class="about-line"></div>
+
+  <h2>
+    TQM-MOS / Kho IPA Tải Games Mod &
+    Apps Premium cho iOS
+  </h2>
+
+  <p>
+    TQM-MOS mang đến trải nghiệm ứng dụng PREMIUM vượt
+    ra ngoài những hạn chế của hệ sinh thái iOS tiêu chuẩn.
+  </p>
+
+  <p>
+    Khám phá những lợi thế của việc sử dụng các ứng dụng
+    tinh chỉnh, game mod và công cụ cao cấp hoàn toàn miễn phí.
+  </p>
+
+  <div class="copyright">
+    © TQM-MOS • Đã đăng ký bản quyền
+    <br>
+    Kho IPA Games Mod & Apps Premium iOS
+  </div>
+</section>
+</body>
+</html>
