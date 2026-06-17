@@ -70,15 +70,17 @@ function closeAppInfo(){
 }
 
 function startDownload(){
- if(selectedApp) window.location.href=selectedApp.link;
+ if(!selectedApp) return;
+
+ if(selectedApp.vip && !isVIP()){
+   openVIP();
+   return;
+ }
+
+ window.location.href=selectedApp.link;
 }
 
 function download(a) {
-
-  if (a.vip && !isVIP()) {
-    openVIP();
-    return;
-  }
 
   selectedApp = a;
 

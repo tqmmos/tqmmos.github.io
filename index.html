@@ -2,9 +2,7 @@
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
-<meta
-  name="viewport"
-  content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <title>TQM MOS PRO</title>
 
 <link rel="stylesheet" href="css/style.css">
@@ -146,5 +144,23 @@
     Kho IPA Games Mod & Apps Premium iOS
   </div>
 </section>
+
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+ const input=document.getElementById('vipCode');
+ if(!input) return;
+ input.style.fontSize='16px';
+ input.addEventListener('focus',function(){
+   document.body.style.zoom='1';
+   const vp=document.querySelector('meta[name="viewport"]');
+   if(vp){vp.setAttribute('content','width=device-width, initial-scale=1, maximum-scale=1');}
+ });
+ input.addEventListener('blur',function(){
+   const vp=document.querySelector('meta[name="viewport"]');
+   if(vp){vp.setAttribute('content','width=device-width, initial-scale=1');}
+ });
+});
+</script>
+
 </body>
 </html>
