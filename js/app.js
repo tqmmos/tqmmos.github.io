@@ -1,20 +1,9 @@
-function lockScroll() {
-    document.body.style.overflow = "hidden";
-}
-
-function unlockScroll() {
-    document.body.style.overflow = "";
-}
 const VIP_CODES=["VIP123","VIP456"];
 
 function isVIP(){return localStorage.getItem("vip")==="true";}
 
-function openVIP(){document.getElementById("vipModal").style.display="flex";
-lockScroll();
-}
-function closeVIP(){document.getElementById("vipModal").style.display="none";
-unlockScroll();
-}
+function openVIP(){document.getElementById("vipModal").style.display="flex";}
+function closeVIP(){document.getElementById("vipModal").style.display="none";}
 
 function activeVIP(){
 let c=document.getElementById("vipCode").value;
@@ -24,6 +13,11 @@ localStorage.setItem("vip","true");
 localStorage.setItem("used_"+c,"true");
 alert("OK VIP");
 closeVIP();
+}
+
+function download(a){
+if(a.vip&&!isVIP()){openVIP();return;}
+window.location.href=a.link;
 }
 
 fetch("apps.json").then(r=>r.json()).then(d=>{
@@ -76,18 +70,23 @@ function closeAppInfo(){
 }
 
 function startDownload(){
+ if(!selectedApp) return;
 
-  if(selectedApp && selectedApp.vip && !isVIP()){
-    openVIP();
-    return;
-  }
+ // Nếu là app VIP và chưa kích hoạt VIP
+ if(selectedApp.vip && !isVIP()){
+   openVIP(); // hiện popup VIP đè lên popup thông tin app
+   return;
+ }
 
-  if(selectedApp){
-    window.location.href = selectedApp.link;
-  }
+ window.location.href=selectedApp.link;
 }
 
 function download(a) {
+
+  if (a.vip && !isVIP()) {
+    openVIP();
+    return;
+  }
 
   selectedApp = a;
 
@@ -113,11 +112,9 @@ ${a.vip ? '<div style="margin:12px 0;padding:10px;background:#fff3cd;color:#b26a
 <p>📦 Phiên bản: ${a.version}</p>
 <p>📝 Có cải thiện hiệu năng và sửa lỗi.</p>
 `;document.getElementById("appModal").style.display="flex";
-lockScroll();
 }
 function closeMore(){
  document.getElementById("moreModal").style.display="none";
-unlockScroll();
 }
 
 
@@ -146,5 +143,4 @@ function showMore(type){
  `).join("");
 
  document.getElementById("moreModal").style.display="flex";
-lockScroll();
 }

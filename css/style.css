@@ -72,14 +72,9 @@ font-size:13px
 
 /* modal */
 .modal{
-    position:fixed;
-    inset:0;
-    display:none;
-    justify-content:center;
-    align-items:center;
-    background:rgba(0,0,0,.65);
-    backdrop-filter:blur(8px);
-    z-index:99999;
+position:fixed;top:0;left:0;right:0;bottom:0;
+background:#000000aa;
+display:none;justify-content:center;align-items:center
 }
 
 .modal-content{
@@ -464,108 +459,21 @@ max-width:700px;
 margin:0 auto 12px;
 line-height:1.6;
 }
-body.lock-scroll{
+
+/* Popup Xem thêm: giữ nguyên trang phía sau, chỉ cuộn nội dung popup */
+#moreModal{
+    align-items:flex-start !important;
+    overflow:hidden !important;
+    padding-top:80px;
+    z-index:10000;
+}
+
+#moreModal .more-content{
+    margin:0 auto;
+    max-height:calc(100vh - 100px);
+    overflow-y:auto;
+}
+
+body.modal-open{
     overflow:hidden;
-}
-/* ========================= VIP POPUP MODERN ========================= */
-.vip-box{ width:min(92vw,500px); max-height:90vh; overflow-y:auto; background:#fff; border-radius:28px; padding:28px; text-align:center; box-shadow:0 20px 60px rgba(0,0,0,.25); animation:vipShow .25s ease; -webkit-overflow-scrolling:touch; }
-@keyframes vipShow{ from{ opacity:0; transform:translateY(20px) scale(.95); } to{ opacity:1; transform:translateY(0) scale(1); } }
-.vip-icon{ width:80px; height:80px; margin:auto; border-radius:50%; background:linear-gradient(135deg,#ffd700,#ff9900); display:flex; align-items:center; justify-content:center; font-size:38px; margin-bottom:15px; box-shadow:0 10px 25px rgba(255,153,0,.25); }
-.vip-desc{ color:#666; margin-bottom:15px; line-height:1.5; }
-.vip-qr{ width:240px; max-width:80vw; height:auto; border-radius:18px; display:block; margin:0 auto; box-shadow:0 10px 25px rgba(0,0,0,.15); }
-.vip-price{ margin:15px 0; padding:12px; border-radius:14px; background:#fff3cd; color:#b26a00; font-weight:700; font-size:15px; }
-.vip-box input{ width:100%; padding:14px; border:none; border-radius:14px; background:#f3f4f6; font-size:15px; margin-bottom:12px; outline:none; }
-.vip-btn{ width:100%; padding:14px; border:none; border-radius:14px; background:linear-gradient(135deg,#ffd700,#ff9900); color:#fff; font-size:16px; font-weight:700; cursor:pointer; }
-.vip-btn:active{ transform:scale(.98); }
-.vip-close{ width:100%; margin-top:10px; border:none; background:none; color:#666; font-weight:600; cursor:pointer; }
-/* ========================= POPUP APP ========================= */
-.modal-content{ width:min(92vw,700px); max-height:90vh; overflow-y:auto; border-radius:24px; -webkit-overflow-scrolling:touch; }
-.app-banner{ width:100%; height:220px; object-fit:cover; border-radius:16px 16px 0 0; }
-.app-icon-wrap{ text-align:center; margin-top:-45px; position:relative; z-index:10; }
-.app-icon{ width:90px; height:90px; border-radius:22px; border:4px solid #fff; background:#fff; }
-.action-buttons{ display:flex; gap:12px; margin-top:16px; }
-.btn-download{ flex:1; background:#007AFF; color:#fff; border:none; border-radius:16px; padding:14px; font-size:16px; font-weight:700; }
-.btn-close{ background:#f1f1f1; border:none; border-radius:16px; padding:14px 20px; font-weight:600; }
-/* ========================= RESPONSIVE IPAD ========================= */
-@media (min-width:768px){
-.list{
-    grid-template-columns:repeat(4,1fr);
-    gap:16px;
-}
-
-.card img{
-    width:80px;
-    height:80px;
-}
-
-.app-banner{
-    height:260px;
-}
-
-.modal-content{
-    max-width:700px;
-}
-
-.vip-box{
-    max-width:500px;
-}
-
-#moreList{
-    grid-template-columns:repeat(3,1fr);
-}
-}
-/* ========================= IPAD PRO / LAPTOP ========================= */
-@media (min-width:1024px){
-.list{
-    grid-template-columns:repeat(5,1fr);
-    gap:18px;
-}
-
-#moreList{
-    grid-template-columns:repeat(4,1fr);
-}
-
-.app-banner{
-    height:300px;
-}
-
-.banner img{
-    max-height:420px;
-    object-fit:cover;
-}
-}
-/* ========================= DESKTOP LỚN ========================= */
-@media (min-width:1400px){
-.list{
-    grid-template-columns:repeat(6,1fr);
-}
-
-.banner{
-    max-width:1400px;
-    margin:15px auto;
-}
-
-.title,
-.about{
-    max-width:1400px;
-    margin-left:auto;
-    margin-right:auto;
-}
-}
-#vipModal{
-    position:fixed !important;
-    inset:0 !important;
-
-    display:none;
-    justify-content:center !important;
-    align-items:center !important;
-
-    background:rgba(0,0,0,.65);
-    backdrop-filter:blur(8px);
-
-    z-index:99999;
-}
-
-#vipModal .vip-box{
-    margin:auto;
 }
