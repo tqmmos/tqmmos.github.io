@@ -70,15 +70,7 @@ function closeAppInfo(){
 }
 
 function startDownload(){
- if(!selectedApp) return;
-
- // Nếu là app VIP và chưa kích hoạt VIP
- if(selectedApp.vip && !isVIP()){
-   openVIP(); // hiện popup VIP đè lên popup thông tin app
-   return;
- }
-
- window.location.href=selectedApp.link;
+ if(selectedApp) window.location.href=selectedApp.link;
 }
 
 function download(a) {

@@ -459,21 +459,3 @@ max-width:700px;
 margin:0 auto 12px;
 line-height:1.6;
 }
-
-/* Popup Xem thêm: giữ nguyên trang phía sau, chỉ cuộn nội dung popup */
-#moreModal{
-    align-items:flex-start !important;
-    overflow:hidden !important;
-    padding-top:80px;
-    z-index:10000;
-}
-
-#moreModal .more-content{
-    margin:0 auto;
-    max-height:calc(100vh - 100px);
-    overflow-y:auto;
-}
-
-body.modal-open{
-    overflow:hidden;
-}

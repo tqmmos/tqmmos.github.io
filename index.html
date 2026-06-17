@@ -50,17 +50,40 @@
 <div id="apps" class="list"></div>
 
 <div class="modal" id="vipModal">
-<div class="modal-content">
-<h3>Mua VIP 50K</h3>
-<img src="img/momo.png" width="200">
-<p>Quét mã và nhập code</p>
+  <div class="vip-box">
 
-<input id="vipCode" placeholder="Nhập mã VIP">
-<br><br>
-<button onclick="activeVIP()">Kích hoạt</button>
-<br><br>
-<button onclick="closeVIP()">Đóng</button>
-</div>
+    <div class="vip-icon">👑</div>
+
+    <h2>Mở khóa VIP</h2>
+
+    <p class="vip-desc">
+      Quét mã QR bên dưới để nhận mã kích hoạt VIP
+    </p>
+
+    <img src="img/momo.png" class="vip-qr">
+
+<p style="font-size:13px;color:#888;margin-top:10px">
+📩 Sau khi chuyển khoản hãy gửi ảnh giao dịch cho Admin để nhận mã VIP
+</p>
+
+    <div class="vip-price">
+      ⭐ VIP TRỌN ĐỜI - 50.000đ
+    </div>
+
+    <input
+      id="vipCode"
+      type="text"
+      placeholder="Nhập mã VIP">
+
+    <button class="vip-btn" onclick="activeVIP()">
+      Kích hoạt VIP
+    </button>
+
+    <button class="vip-close" onclick="closeVIP()">
+      Đóng
+    </button>
+
+  </div>
 </div>
 
 <script src="js/app.js"></script>
