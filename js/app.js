@@ -2,8 +2,16 @@ const VIP_CODES=["220292","160192","290494"];
 
 function isVIP(){return localStorage.getItem("vip")==="true";}
 
-function openVIP(){document.getElementById("vipModal").style.display="flex";}
-function closeVIP(){document.getElementById("vipModal").style.display="none";}
+function openVIP(){
+    const vip = document.getElementById("vipModal");
+    vip.style.display = "flex";
+    vip.classList.add("show");
+}
+function closeVIP(){
+    const vip = document.getElementById("vipModal");
+    vip.classList.remove("show");
+    vip.style.display = "none";
+}
 
 function activeVIP(){
 let c=document.getElementById("vipCode").value;
@@ -54,7 +62,7 @@ function closeAppInfo(){
   document.getElementById("appModal").style.display = "none";
 
   if(window.fromMoreModal){
-    document.getElementById("moreModal").style.visibility = "visible";
+    document.getElementById("moreModal").style.display = "flex";
     window.fromMoreModal = false;
   }
 
@@ -75,6 +83,12 @@ function download(a) {
 
   selectedApp = a;
 
+  const fakeDownloads =
+    (Math.floor(Math.random() * 900) + 100) + "K+";
+
+  const fakeStar =
+    (4.5 + Math.random() * 0.5).toFixed(1);
+
 if (
   document.getElementById("moreModal") &&
   document.getElementById("moreModal").style.display === "flex"
@@ -88,8 +102,8 @@ if (
 <h2>${a.name}</h2>
 </div>
 <div class="app-stats">
-<span>⭐ ${a.star || "N/A"}</span>
-<span>⬇️ ${a.downloads || "N/A"}</span>
+<span>⭐ ${fakeStar}</span>
+<span>⬇️ ${fakeDownloads}</span>
 <span>💾 ${a.size || "N/A"}</span>
 </div>
 ${a.vip ? '<div style="margin:12px 0;padding:10px;background:#fff3cd;color:#b26a00;border-radius:12px;font-weight:700">👑 YÊU CẦU VIP</div>' : ''}
@@ -143,7 +157,10 @@ document.addEventListener('DOMContentLoaded',()=>{
   window.closeAppInfo=function(){
     if(app){
       app.classList.remove('show');
-      setTimeout(()=>{app.style.display='none'; if(window.fromMoreModal&&more){more.style.visibility='visible';more.classList.add('show');window.fromMoreModal=false;}},200);
+      setTimeout(()=>{app.style.display='none'; if(window.fromMoreModal && more){
+    more.style.visibility = 'visible';
+    window.fromMoreModal = false;
+}},200);
     }
   }
 
