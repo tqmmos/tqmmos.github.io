@@ -1,22 +1,22 @@
-body{margin:0;font-family:-apple-system;background:#f2f2f2}
+body{margin:0;font-family:-apple-system;background:#f2f2f2;}
 
 .header{
 text-align:center;
 padding:15px;
 background:#fff;
 font-weight:bold;
-font-size:20px
+font-size:20px;
 }
 
 .banner{
 margin:10px;
 border-radius:20px;
-overflow:hidden
+overflow:hidden;
 }
 
 .banner img{
 width:100%;
-border-radius:20px
+border-radius:20px;
 }
 
 .title{
@@ -24,7 +24,7 @@ margin:10px;
 background:#eaeff2;
 padding:12px;
 border-radius:12px;
-font-weight:bold
+font-weight:bold;
 }
 
 .list{
@@ -34,10 +34,9 @@ gap:12px;
 padding:10px;
 }
 
-*{box-sizing:border-box}
-html,body{width:100%;overflow-x:hidden}
+*{box-sizing:border-box;}html,body{width:100%;overflow-x:hidden;}
 
-.list::-webkit-scrollbar{display:none}
+.list::-webkit-scrollbar{display:none;}
 
 .card{
 width:100%;
@@ -49,15 +48,15 @@ display:flex;
 flex-direction:column;
 align-items:center;
 scroll-snap-align:start;
-box-shadow:0 4px 10px rgba(0,0,0,0.08)
+box-shadow:0 4px 10px rgba(0,0,0,0.08);
 }
 
 .card img{
-width:70px;height:70px;border-radius:15px
+width:70px;height:70px;border-radius:15px;
 }
 
 .card b{font-size:14px;margin-top:5px}
-.card p{font-size:12px;color:#666;margin:3px 0}
+.card p{font-size:12px;color:#666;margin:3px 0;}
 
 .btn{
 margin-top:5px;
@@ -65,7 +64,7 @@ background:linear-gradient(45deg,#ff6ec4,#7873f5);
 border:none;color:#fff;
 padding:6px 12px;
 border-radius:12px;
-font-size:13px
+font-size:13px;
 }
 
 .vip{color:red;font-size:12px;}
@@ -73,7 +72,6 @@ font-size:13px
 #vipModal{
 position:fixed;
 inset:0;
-display:none;
 justify-content:center;
 align-items:center;
 background:rgba(0,0,0,.55);
@@ -81,8 +79,8 @@ z-index:999999;
 padding:16px;
 }
 .vip-box{
-width:100%;
-max-width:340px;
+width:90%;
+max-width:420px;
 background:#fff;
 border-radius:28px;
 padding:22px 18px;
@@ -178,11 +176,9 @@ bottom:0;
 background:#000000aa;
 justify-content:center;
 align-items:center;
-z-index:9999;
-opacity:0;
 visibility:hidden;
 transition:opacity .2s ease;
-will-change:opacity;
+z-index:9999;
 }
 
 .modal.show{
