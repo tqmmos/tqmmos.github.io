@@ -94,20 +94,15 @@ const allItems = [
   ...(d.apps || [])
 ];
 
-await Promise.all(
-  allItems.map(async app => {
+for(const app of allItems){
 
-    if(app.bundle){
+  if(app.bundle){
+    app.version = await getLatestVersion(
+      app.bundle
+    );
+  }
 
-      app.version =
-        await getLatestVersion(
-          app.bundle
-        );
-
-    }
-
-  })
-);
+}
 
 const featuredRandom = [...allApps]
   .sort(() => Math.random() - 0.5)
@@ -125,39 +120,15 @@ let selectedApp=null;
 async function getLatestVersion(bundleId){
 
   try{
-
     const r = await fetch(
-      `https://itunes.apple.com/lookup?bundleId=${encodeURIComponent(bundleId)}&country=us`,
-      {
-        method: "GET",
-        mode: "cors",
-        cache: "no-cache"
-      }
+      `https://itunes.apple.com/lookup?bundleId=${bundleId}`
     );
-
-    if(!r.ok) throw new Error("HTTP Error");
 
     const d = await r.json();
 
-    if(
-      d &&
-      d.resultCount > 0 &&
-      d.results &&
-      d.results[0]
-    ){
-      return d.results[0].version || "N/A";
-    }
-
-    return "N/A";
+    return d.results?.[0]?.version || "N/A";
 
   }catch(e){
-
-    console.error(
-      "Version lookup failed:",
-      bundleId,
-      e
-    );
-
     return "N/A";
   }
 

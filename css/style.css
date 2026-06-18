@@ -88,10 +88,20 @@ justify-content:center;
 align-items:center;
 background:#000000aa;
 z-index:9999;
-padding:16px;
+padding:0;
 opacity:0;
 visibility:hidden;
 transition:opacity .2s ease;
+}
+
+#vipModal .modal-content{
+    width:90% !important;
+    max-width:420px !important;
+}
+
+#appModal .modal-content{
+    width:90% !important;
+    max-width:420px !important;
 }
 
 #vipModal.show{
