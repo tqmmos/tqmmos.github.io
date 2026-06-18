@@ -62,26 +62,47 @@ async function activeVIP(){
   closeVIP();
 }
 
-fetch("apps.json").then(r=>r.json()).then(d=>{
+fetch("apps.json").then(r=>r.json()).then(async d=>{
 function render(list,id){
 let el=document.getElementById(id);
 el.innerHTML=list.map(a=>`
 <div class="card">
 <img src="${a.icon}">
 <b>${a.name}</b>
-<p>${a.version}</p>
+<p>✅ ${a.dec || (id === "games" ? "Hacks" : "Premium")}</p>
+<p>📦 ${a.version || "N/A"}</p>
 ${a.vip?'<div class="vip">VIP</div>':''}
 <button class="btn" onclick='download(${JSON.stringify(a)})'>Xem</button>
 </div>`).join("");
 }
 
-window.allGames = d.games || [];
-window.allApps = d.apps || [];
+window.allGames = (d.games || []).sort((a, b) =>
+  a.name.localeCompare(b.name, 'vi', { sensitivity: 'base' })
+);
+
+window.allApps = (d.apps || []).sort((a, b) =>
+  a.name.localeCompare(b.name, 'vi', { sensitivity: 'base' })
+);
 
 const allApps = [
   ...window.allGames,
   ...window.allApps
 ];
+
+const allItems = [
+  ...(d.games || []),
+  ...(d.apps || [])
+];
+
+for(const app of allItems){
+
+  if(app.bundle){
+    app.version = await getLatestVersion(
+      app.bundle
+    );
+  }
+
+}
 
 const featuredRandom = [...allApps]
   .sort(() => Math.random() - 0.5)
@@ -175,7 +196,7 @@ if (
 </div>
 ${a.vip ? '<div style="margin:12px 0;padding:10px;background:#fff3cd;color:#b26a00;border-radius:12px;font-weight:700">👑 YÊU CẦU VIP</div>' : ''}
 <p>📦 Phiên bản: ${latestVersion}</p>
-<p>✅ : ${a.dec || "N/A"}</p>
+<p>✅ : ${a.dec || (window.allGames.some(g => g.name === a.name) ? "Hacks" : "Premium")}</p>
 `;document.getElementById("appModal").style.display="flex";
 }
 function closeMore(){
@@ -199,7 +220,8 @@ function showMore(type){
  <div class="card">
    <img src="${a.icon}">
    <b>${a.name}</b>
-   <p>${a.version}</p>
+   <p>✅ ${a.dec || (type === "games" ? "Hacks" : "Premium")}</p>
+   <p>📦 ${a.version || "N/A"}</p>
    ${a.vip ? '<div class="vip">VIP</div>' : ''}
    <button class="btn" onclick='download(${JSON.stringify(a)})'>
       Xem

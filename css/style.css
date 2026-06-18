@@ -100,15 +100,10 @@ visibility:visible;
 }
 
 .vip-box{
-background:#fff;
-padding:20px;
-border-radius:20px;
 text-align:center;
-width:90%;
-max-width:420px;
-max-height:85vh;
-overflow-y:auto;
--webkit-overflow-scrolling:touch;
+overflow:visible;
+height:auto;
+max-height:none;
 }
 
 .vip-icon{

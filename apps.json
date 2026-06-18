@@ -6,7 +6,7 @@
       "icon": "img/icon/Youtube.png",
       "banner": "img/banner/a.png",
       "vip": true,
-      "dec": "Premium",
+      "version": "",
       "link": "#"
     },
     {
@@ -15,7 +15,6 @@
       "icon": "img/icon/Widgy.png",
       "banner": "img/banner/a.png",
       "vip": true,
-      "dec": "Premium",
       "link": "#"
     },
     {
@@ -68,6 +67,9 @@
     }
   ],
 
+
+
+
   "games": [
     {
       "name": "Jetpack 2",
@@ -75,7 +77,6 @@
       "icon": "img/icon/Jetpack2.png",
       "banner": "img/banner/a.png",
       "vip": true,
-      "dec": "Hacks",
       "link": "#"
     }
   ]
