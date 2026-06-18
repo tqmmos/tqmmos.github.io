@@ -57,7 +57,7 @@ async function activeVIP(){
   localStorage.setItem("vip","true");
   localStorage.setItem("used_"+hashed,"true");
 
-  alert("Đã lên VIP");
+  alert("Kích hoạt thành công 🎉");
 
   closeVIP();
 }

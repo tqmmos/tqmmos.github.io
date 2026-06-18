@@ -1,4 +1,73 @@
 {
+  "apps": [
+    {
+      "name": "Youtube",
+      "bundle": "com.google.ios.youtube",
+      "icon": "img/icon/Youtube.png",
+      "banner": "img/banner/a.png",
+      "vip": true,
+      "dec": "Premium",
+      "link": "#"
+    },
+    {
+      "name": "Widgy",
+      "bundle": "com.woodsign.Widgy",
+      "icon": "img/icon/Widgy.png",
+      "banner": "img/banner/a.png",
+      "vip": true,
+      "dec": "Premium",
+      "link": "#"
+    },
+    {
+      "name": "Aloha",
+      "bundle": "com.alohabrowser.alohabrowser",
+      "icon": "img/icon/Aloha.png",
+      "banner": "img/banner/a.png",
+      "vip": true,
+      "link": "#"
+    },
+    {
+      "name": "Facebook",
+      "bundle": "com.facebook.Facebook",
+      "icon": "img/icon/Facebook.png",
+      "banner": "img/banner/a.png",
+      "vip": true,
+      "link": "#"
+    },
+    {
+      "name": "Zalo",
+      "bundle": "vn.com.vng.zingalo",
+      "icon": "img/icon/Zalo.png",
+      "banner": "img/banner/a.png",
+      "vip": true,
+      "link": "#"
+    },
+    {
+      "name": "Meitu",
+      "bundle": "com.meitu.mtxx",
+      "icon": "img/icon/Meitu.png",
+      "banner": "img/banner/a.png",
+      "vip": true,
+      "link": "#"
+    },
+    {
+      "name": "Camera 360",
+      "bundle": "com.woodsign.Widgy",
+      "icon": "img/icon/Camera360.png",
+      "banner": "img/banner/a.png",
+      "vip": true,
+      "link": "#"
+    },
+    {
+      "name": "VivaVideo",
+      "bundle": "com.woodsign.Widgy",
+      "icon": "img/icon/VivaVideo.png",
+      "banner": "img/banner/a.png",
+      "vip": true,
+      "link": "#"
+    }
+  ],
+
   "games": [
     {
       "name": "Jetpack 2",
@@ -8,115 +77,10 @@
       "vip": true,
       "dec": "Hacks",
       "link": "#"
-    },
-    {
-      "name": "Archero 2",
-      "icon": "img/icon/Archero2.png",
-      "banner": "img/banner/a.png",
-      "version": "3.5.10",
-      "vip": true,
-      "dec": "Hacks",
-      "link": "#"
-    },
-    {
-      "name": "Archero",
-      "icon": "img/icon/Archero.png",
-      "banner": "img/banner/a.png",
-      "version": "3.5.10",
-      "vip": true,
-      "link": "#"
-    },
-    {
-      "name": "Liên Quân Mobile",
-      "icon": "img/icon/Archero.png",
-      "banner": "img/banner/a.png",
-      "version": "3.5.10",
-      "vip": true,
-      "link": "#"
-    },
-    {
-      "name": "Coin Master",
-      "icon": "img/icon/Archero.png",
-      "banner": "img/banner/a.png",
-      "vip": true,
-      "size": "185 MB",
-      "link": "#"
-    },
-    {
-      "name": "lIMBO+",
-      "icon": "img/icon/Archero.png",
-      "banner": "img/banner/a.png",
-      "version": "3.5.10",
-      "vip": true,
-      "link": "#"
-    },
-    {
-      "name": "Fruit Ninja Classic",
-      "icon": "img/icon/Archero.png",
-      "banner": "img/banner/a.png",
-      "version": "3.5.10",
-      "vip": true,
-      "link": "#"
-    }
-  ],
-  "apps": [
-    {
-      "name": "Widgy",
-      "bundle": "com.google.ios.youtube",
-      "icon": "img/icon/Widgy.png",
-      "banner": "img/banner/a.png",
-      "version": "3.5.10",
-      "vip": true,
-      "dec": "Premium",
-      "link": "#"
-    },
-    {
-      "name": "Aloha",
-      "icon": "img/icon/Aloha.png",
-      "banner": "img/banner/a.png",
-      "version": "3.5.10",
-      "vip": true,
-      "link": "#"
-    },
-    {
-      "name": "Facebook",
-      "icon": "img/icon/Facebook.png",
-      "banner": "img/banner/a.png",
-      "version": "3.5.10",
-      "vip": true,
-      "link": "#"
-    },
-    {
-      "name": "Zalo",
-      "icon": "img/icon/Facebook.png",
-      "banner": "img/banner/a.png",
-      "version": "3.5.10",
-      "vip": true,
-      "link": "#"
-    },
-    {
-      "name": "Meitu",
-      "icon": "img/icon/Facebook.png",
-      "banner": "img/banner/a.png",
-      "version": "3.5.10",
-      "vip": true,
-      "link": "#"
-    },
-    {
-      "name": "Camera 360",
-      "icon": "img/icon/Facebook.png",
-      "banner": "img/banner/a.png",
-      "version": "3.5.10",
-      "vip": true,
-      "link": "#"
-    },
-    {
-      "name": "VivaVideo",
-      "icon": "img/icon/Facebook.png",
-      "banner": "img/banner/a.png",
-      "version": "3.5.10",
-      "vip": true,
-      "link": "#"
     }
   ]
 }
+
+
+
+
