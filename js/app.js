@@ -1,4 +1,4 @@
-const VIP_CODES=["VIP123","VIP456"];
+const VIP_CODES=["220292","160192","290494"];
 
 function isVIP(){return localStorage.getItem("vip")==="true";}
 
@@ -7,17 +7,12 @@ function closeVIP(){document.getElementById("vipModal").style.display="none";}
 
 function activeVIP(){
 let c=document.getElementById("vipCode").value;
-if(!VIP_CODES.includes(c)) return alert("Sai code");
-if(localStorage.getItem("used_"+c)) return alert("Đã dùng");
+if(!VIP_CODES.includes(c)) return alert("Hãy mua VIP");
+if(localStorage.getItem("used_"+c)) return alert("Mã đã dùng");
 localStorage.setItem("vip","true");
 localStorage.setItem("used_"+c,"true");
-alert("OK VIP");
+alert("Đã nên VIP");
 closeVIP();
-}
-
-function download(a){
-if(a.vip&&!isVIP()){openVIP();return;}
-window.location.href=a.link;
 }
 
 fetch("apps.json").then(r=>r.json()).then(d=>{
@@ -33,11 +28,9 @@ ${a.vip?'<div class="vip">VIP</div>':''}
 </div>`).join("");
 }
 
-// Lưu dữ liệu toàn bộ
 window.allGames = d.games || [];
 window.allApps = d.apps || [];
 
-// Nổi bật ngẫu nhiên
 const allApps = [
   ...window.allGames,
   ...window.allApps
@@ -47,10 +40,8 @@ const featuredRandom = [...allApps]
   .sort(() => Math.random() - 0.5)
   .slice(0, 4);
 
-// Hiển thị
 render(featuredRandom, "featured");
 
-// Chỉ hiện 6 app
 render(window.allGames.slice(0, 6), "games");
 render(window.allApps.slice(0, 6), "apps");
 });
@@ -84,7 +75,6 @@ function download(a) {
 
   selectedApp = a;
 
-// Nếu mở từ popup Xem thêm thì chỉ ẩn tạm
 if (
   document.getElementById("moreModal") &&
   document.getElementById("moreModal").style.display === "flex"
@@ -104,7 +94,7 @@ if (
 </div>
 ${a.vip ? '<div style="margin:12px 0;padding:10px;background:#fff3cd;color:#b26a00;border-radius:12px;font-weight:700">👑 YÊU CẦU VIP</div>' : ''}
 <p>📦 Phiên bản: ${a.version}</p>
-<p>📝 Có cải thiện hiệu năng và sửa lỗi.</p>
+<p>✅ : ${a.dec || "N/A"}</p>
 `;document.getElementById("appModal").style.display="flex";
 }
 function closeMore(){
