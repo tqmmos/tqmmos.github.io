@@ -79,13 +79,17 @@ z-index:999999;
 padding:16px;
 }
 .vip-box{
+background:#fff;
+padding:20px;
+border-radius:20px;
+text-align:center;
 width:90%;
 max-width:420px;
-background:#fff;
-border-radius:28px;
-padding:22px 18px;
-text-align:center;
+max-height:85vh;
+overflow-y:auto;
+-webkit-overflow-scrolling:touch;
 }
+
 .vip-icon{
 width:72px;
 height:72px;
@@ -138,12 +142,6 @@ border:none;
 font-weight:600;
 }
 
-.vip-card,.vip-content{
- max-width:320px !important;
- max-height:85vh !important;
- overflow-y:auto !important;
- padding:20px !important;
-}
 .vip-qr{
  width:150px !important;
  height:150px !important;

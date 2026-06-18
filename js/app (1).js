@@ -1,65 +1,26 @@
-const VIP_HASHES=[
-"640632983ba14acf7da857b23edd34465f075ac7d1529cadf6fbdfd099892b53",
-"2c5d75e771e3723fc786edf4add82e36269d9005babc5d658722b1c7c02e7800",
-"eb3e49a32d54aab63a7df7bad1139c5bc162879137ff820c028f0692ea45cfa7"
-];
-
-async function sha256(text){
-
-  const buf = await crypto.subtle.digest(
-    "SHA-256",
-    new TextEncoder().encode(text)
-  );
-
-  return [...new Uint8Array(buf)]
-    .map(b=>b.toString(16).padStart(2,"0"))
-    .join("");
-
-}
+const VIP_CODES=["220292","160192","290494"];
 
 function isVIP(){return localStorage.getItem("vip")==="true";}
 
 function openVIP(){
-
-    document.getElementById("appModal").style.visibility = "hidden";
-
     const vip = document.getElementById("vipModal");
     vip.style.display = "flex";
     vip.classList.add("show");
 }
 function closeVIP(){
-
     const vip = document.getElementById("vipModal");
     vip.classList.remove("show");
-
-    setTimeout(()=>{
-        vip.style.display = "none";
-
-        document.getElementById("appModal").style.visibility = "visible";
-
-    },200);
+    vip.style.display = "none";
 }
 
-async function activeVIP(){
-
-  let c = document.getElementById("vipCode").value.trim();
-
-  const hashed = await sha256(c);
-
-  if(!VIP_HASHES.includes(hashed)){
-    return alert("Hãy mua VIP");
-  }
-
-  if(localStorage.getItem("used_"+hashed)){
-    return alert("Mã đã dùng");
-  }
-
-  localStorage.setItem("vip","true");
-  localStorage.setItem("used_"+hashed,"true");
-
-  alert("Đã lên VIP");
-
-  closeVIP();
+function activeVIP(){
+let c=document.getElementById("vipCode").value;
+if(!VIP_CODES.includes(c)) return alert("Hãy mua VIP");
+if(localStorage.getItem("used_"+c)) return alert("Mã đã dùng");
+localStorage.setItem("vip","true");
+localStorage.setItem("used_"+c,"true");
+alert("Đã nên VIP");
+closeVIP();
 }
 
 fetch("apps.json").then(r=>r.json()).then(d=>{

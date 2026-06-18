@@ -2,11 +2,10 @@
   "games": [
     {
       "name": "Jetpack 2",
+      "bundle": "com.google.ios.youtube",
       "icon": "img/icon/Jetpack2.png",
       "banner": "img/banner/a.png",
-      "version": "3.5.10",
       "vip": true,
-      "size": "185 MB",
       "dec": "Hacks",
       "link": "#"
     },
@@ -16,7 +15,6 @@
       "banner": "img/banner/a.png",
       "version": "3.5.10",
       "vip": true,
-      "size": "185 MB",
       "dec": "Hacks",
       "link": "#"
     },
@@ -26,9 +24,6 @@
       "banner": "img/banner/a.png",
       "version": "3.5.10",
       "vip": true,
-      "size": "185 MB",
-      "downloads": "125K+",
-      "star": "5.0",
       "link": "#"
     },
     {
@@ -37,20 +32,14 @@
       "banner": "img/banner/a.png",
       "version": "3.5.10",
       "vip": true,
-      "size": "185 MB",
-      "downloads": "125K+",
-      "star": "5.0",
       "link": "#"
     },
     {
       "name": "Coin Master",
       "icon": "img/icon/Archero.png",
       "banner": "img/banner/a.png",
-      "version": "3.5.10",
       "vip": true,
       "size": "185 MB",
-      "downloads": "125K+",
-      "star": "5.0",
       "link": "#"
     },
     {
@@ -59,9 +48,6 @@
       "banner": "img/banner/a.png",
       "version": "3.5.10",
       "vip": true,
-      "size": "185 MB",
-      "downloads": "125K+",
-      "star": "5.0",
       "link": "#"
     },
     {
@@ -70,22 +56,17 @@
       "banner": "img/banner/a.png",
       "version": "3.5.10",
       "vip": true,
-      "size": "185 MB",
-      "downloads": "125K+",
-      "star": "5.0",
       "link": "#"
     }
   ],
   "apps": [
     {
       "name": "Widgy",
+      "bundle": "com.google.ios.youtube",
       "icon": "img/icon/Widgy.png",
       "banner": "img/banner/a.png",
       "version": "3.5.10",
       "vip": true,
-      "size": "185 MB",
-      "downloads": "125K+",
-      "star": "5.0",
       "dec": "Premium",
       "link": "#"
     },
@@ -95,9 +76,6 @@
       "banner": "img/banner/a.png",
       "version": "3.5.10",
       "vip": true,
-      "size": "185 MB",
-      "downloads": "125K+",
-      "star": "5.0",
       "link": "#"
     },
     {
@@ -106,9 +84,6 @@
       "banner": "img/banner/a.png",
       "version": "3.5.10",
       "vip": true,
-      "size": "185 MB",
-      "downloads": "125K+",
-      "star": "5.0",
       "link": "#"
     },
     {
@@ -117,9 +92,6 @@
       "banner": "img/banner/a.png",
       "version": "3.5.10",
       "vip": true,
-      "size": "185 MB",
-      "downloads": "125K+",
-      "star": "5.0",
       "link": "#"
     },
     {
@@ -128,9 +100,6 @@
       "banner": "img/banner/a.png",
       "version": "3.5.10",
       "vip": true,
-      "size": "185 MB",
-      "downloads": "125K+",
-      "star": "5.0",
       "link": "#"
     },
     {
@@ -139,9 +108,6 @@
       "banner": "img/banner/a.png",
       "version": "3.5.10",
       "vip": true,
-      "size": "185 MB",
-      "downloads": "125K+",
-      "star": "5.0",
       "link": "#"
     },
     {
@@ -150,9 +116,6 @@
       "banner": "img/banner/a.png",
       "version": "3.5.10",
       "vip": true,
-      "size": "185 MB",
-      "downloads": "125K+",
-      "star": "5.0",
       "link": "#"
     }
   ]
