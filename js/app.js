@@ -102,7 +102,7 @@ if (
 <span>⬇️ ${a.downloads || "N/A"}</span>
 <span>💾 ${a.size || "N/A"}</span>
 </div>
-${a.vip ? '<div style="margin:12px 0;padding:10px;background:#fff3cd;color:#b26a00;border-radius:12px;font-weight:700">⭐ YÊU CẦU VIP</div>' : ''}
+${a.vip ? '<div style="margin:12px 0;padding:10px;background:#fff3cd;color:#b26a00;border-radius:12px;font-weight:700">👑 YÊU CẦU VIP</div>' : ''}
 <p>📦 Phiên bản: ${a.version}</p>
 <p>📝 Có cải thiện hiệu năng và sửa lỗi.</p>
 `;document.getElementById("appModal").style.display="flex";
