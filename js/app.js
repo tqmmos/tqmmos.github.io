@@ -138,3 +138,35 @@ function showMore(type){
 
  document.getElementById("moreModal").style.display="flex";
 }
+
+document.addEventListener('DOMContentLoaded',()=>{
+  const app=document.getElementById('appModal');
+  const more=document.getElementById('moreModal');
+
+  const oldDownload=window.download;
+  window.download=function(a){
+    oldDownload(a);
+    requestAnimationFrame(()=>app && app.classList.add('show'));
+  }
+
+  const oldCloseApp=window.closeAppInfo;
+  window.closeAppInfo=function(){
+    if(app){
+      app.classList.remove('show');
+      setTimeout(()=>{app.style.display='none'; if(window.fromMoreModal&&more){more.style.visibility='visible';more.classList.add('show');window.fromMoreModal=false;}},200);
+    }
+  }
+
+  const oldShowMore=window.showMore;
+  window.showMore=function(type){
+    oldShowMore(type);
+    requestAnimationFrame(()=>more && more.classList.add('show'));
+  }
+
+  window.closeMore=function(){
+    if(more){
+      more.classList.remove('show');
+      setTimeout(()=>{more.style.display='none';},200);
+    }
+  }
+});
