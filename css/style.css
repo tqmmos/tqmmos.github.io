@@ -72,16 +72,9 @@ font-size:13px
 
 /* modal */
 .modal{
-position:fixed;
-top:0;
-left:0;
-right:0;
-bottom:0;
+position:fixed;top:0;left:0;right:0;bottom:0;
 background:#000000aa;
-display:flex !important;
-justify-content:center;
-align-items:center;
-z-index:9999;
+display:none;justify-content:center;align-items:center
 }
 
 .modal-content{
@@ -91,14 +84,13 @@ border-radius:20px;
 text-align:center;
 width:90%;
 max-width:420px;
+}
+
+.more-content{
 max-width:900px !important;
 max-height:85vh;
 overflow-y:auto;
 -webkit-overflow-scrolling:touch;
-}
-
-.more-content{
-
 }
 
 #moreList{
@@ -426,6 +418,14 @@ display:block;
 body{
 
 padding-top:72px;
+
+}
+
+/* popup luôn nổi trên nav */
+
+.modal{
+
+z-index:9999;
 
 }
 .about{
