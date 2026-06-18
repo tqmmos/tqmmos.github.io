@@ -19,6 +19,17 @@ width:100%;
 border-radius:20px;
 }
 
+.ads{
+margin:10px;
+border-radius:0px;
+overflow:hidden;
+}
+
+.ads img{
+width:100%;
+border-radius:0px;
+}
+
 .title{
 margin:10px;
 background:#eaeff2;
@@ -72,12 +83,22 @@ font-size:13px;
 #vipModal{
 position:fixed;
 inset:0;
+display:flex;
 justify-content:center;
 align-items:center;
-background:rgba(0,0,0,.55);
-z-index:999999;
+background:#000000aa;
+z-index:9999;
 padding:16px;
+opacity:0;
+visibility:hidden;
+transition:opacity .2s ease;
 }
+
+#vipModal.show{
+opacity:1;
+visibility:visible;
+}
+
 .vip-box{
 background:#fff;
 padding:20px;
@@ -158,10 +179,6 @@ font-weight:600;
  border:none !important;
 }
 @media (max-height:700px){
- .vip-card,.vip-content{
-   max-width:300px !important;
-   padding:15px !important;
- }
  .vip-qr{width:130px !important;height:130px !important;}
 }
 
@@ -479,9 +496,10 @@ flex-shrink:0;
 }
 
 .nav-icon img{
-width:20px;
-height:20px;
+width:100%;
+height:100%;
 object-fit:contain;
+border-radius: 100%;
 }
 
 .nav-logo{
