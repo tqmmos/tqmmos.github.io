@@ -47,7 +47,7 @@ async function activeVIP(){
   const hashed = await sha256(c);
 
   if(!VIP_HASHES.includes(hashed)){
-    return alert("Hãy mua VIP");
+    return alert("Không hợp lệ 😬");
   }
 
   if(localStorage.getItem("used_"+hashed)){
@@ -94,20 +94,17 @@ const allItems = [
   ...(d.apps || [])
 ];
 
-await Promise.all(
-  allItems.map(async app => {
+for (const app of allItems) {
 
-    if(app.bundle){
+  if (app.bundle) {
 
-      app.version =
-        await getLatestVersion(
-          app.bundle
-        );
+    app.version = await getLatestVersion(
+      app.bundle
+    );
 
-    }
+  }
 
-  })
-);
+}
 
 const featuredRandom = [...allApps]
   .sort(() => Math.random() - 0.5)
@@ -115,8 +112,27 @@ const featuredRandom = [...allApps]
 
 render(featuredRandom, "featured");
 
-render(window.allGames.slice(0, 6), "games");
-render(window.allApps.slice(0, 6), "apps");
+function updateHomeApps(){
+
+  const showCount =
+  (
+    window.innerWidth >= 768 ||
+    (
+      window.innerWidth < 768 &&
+      window.innerWidth > window.innerHeight
+    )
+  )
+  ? 8 : 6;
+
+  render(window.allGames.slice(0, showCount), "games");
+  render(window.allApps.slice(0, showCount), "apps");
+
+}
+
+updateHomeApps();
+
+window.addEventListener("resize", updateHomeApps);
+window.addEventListener("orientationchange", updateHomeApps);
 });
 
 
@@ -127,7 +143,7 @@ async function getLatestVersion(bundleId){
   try{
 
     const r = await fetch(
-      `https://itunes.apple.com/lookup?bundleId=${encodeURIComponent(bundleId)}&country=us`,
+      `https://itunes.apple.com/lookup?bundleId=${encodeURIComponent(bundleId)}&country=vn`,
       {
         method: "GET",
         mode: "cors",
@@ -175,6 +191,7 @@ function closeAppInfo(){
 }
 
 function startDownload(){
+
  if(!selectedApp) return;
 
  if(selectedApp.vip && !isVIP()){
@@ -182,12 +199,100 @@ function startDownload(){
    return;
  }
 
- window.location.href=selectedApp.link;
+ if(
+   selectedApp.versions &&
+   selectedApp.versions.length
+ ){
+
+   let html = `
+     <h2 style="margin-bottom:15px">
+       Chọn phiên bản
+     </h2>
+   `;
+
+   selectedApp.versions.forEach(v=>{
+
+ html += `
+<div class="version-card">
+
+  <span>
+
+    📦 ${v.version}
+
+    ${
+      v.vip
+      ? ' 👑 VIP'
+      : ' 🆓 FREE'
+    }
+
+  </span>
+
+  <button
+    onclick="
+      if(${v.vip} && !isVIP()){
+        openVIP();
+      }else{
+        window.location.href='${v.link}';
+      }
+    "
+  >
+    Tải
+  </button>
+
+</div>
+`;
+
+});
+
+   html += `
+     <button
+       class="btn-close"
+       style="margin-top:12px;width:100%"
+       onclick="
+const actions=document.querySelector('.action-buttons');
+if(actions) actions.style.display='flex';
+download(selectedApp);
+"
+     >
+       Quay lại
+     </button>
+   `;
+
+const box = document.getElementById("appInfo");
+
+box.innerHTML = html;
+
+const actions = document.querySelector(".action-buttons");
+if(actions){
+    actions.style.display = "none";
+}
+
+const downloadBtn = document.querySelector(".download-btn");
+if(downloadBtn){
+  downloadBtn.style.display = "none";
+}
+
+document.getElementById("appModal").style.display = "flex";
+
+   return;
+ }
+
+ window.location.href = selectedApp.link;
 }
 
 async function download(a) {
 
   selectedApp = a;
+
+const actions = document.querySelector(".action-buttons");
+if(actions){
+    actions.style.display = "flex";
+}
+
+const downloadBtn = document.querySelector(".download-btn");
+if(downloadBtn){
+  downloadBtn.style.display = "block";
+}
 
   const latestVersion =
   a.bundle
@@ -224,8 +329,21 @@ if (
 <span>💾 ${fakeSize}</span>
 </div>
 ${a.vip ? '<div style="margin:12px 0;padding:10px;background:#fff3cd;color:#b26a00;border-radius:12px;font-weight:700">👑 YÊU CẦU VIP</div>' : ''}
-<p>📦 Phiên bản: ${latestVersion}</p>
-<p>✅ : ${a.dec || (window.allGames.some(g => g.name === a.name) ? "Hacks" : "Premium")}</p>
+<p>
+📦 Phiên bản:
+${
+  a.versions
+    ? a.versions.length + " phiên bản khả dụng"
+    : latestVersion
+}
+</p>
+${
+a.versions
+? `<p style="color:#007AFF;font-weight:700">
+👇 Nhấn nút Tải để chọn phiên bản
+</p>`
+: ""
+}
 `;document.getElementById("appModal").style.display="flex";
 }
 function closeMore(){
@@ -295,3 +413,5 @@ document.addEventListener('DOMContentLoaded',()=>{
     }
   }
 });
+
+
