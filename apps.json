@@ -1,0 +1,228 @@
+[
+    {
+      "name": "BeautyCam",
+      "bundle": "com.meitu.myxj",
+      "icon": "img/icon/BeautyCam.png",
+      "banner": "img/banner/BeautyCam.png",
+      "features":  [
+        "Mở khoá Premium"
+    ],
+      "versions": [
+    {
+      "version":"12.5.20",
+      "link":"https://link4m.org/Wnhop"
+    },
+    {
+      "version":"12.5.20",
+      "link":"https://www.mediafire.com/file/mm4udt5rbkv2yhq/Aloha_7.5.1-TQM.ipa/file",
+      "vip": true
+    }
+  ]
+    },
+    {
+      "name": "B612",
+      "bundle": "com.linecorp.b612",
+      "icon": "img/icon/B612.png",
+      "banner": "img/banner/B612.png",
+      "features":  [
+        "Mở khoá Premium"
+    ],
+      "versions":[
+    {
+      "version":"14.0.16",
+      "link":"https://link4m.net/SEE1ETUJ"
+    },
+    {
+      "version":"14.0.16",
+      "link":"https://www.mediafire.com/file/mm4udt5rbkv2yhq/Aloha_7.5.1-TQM.ipa/file",
+      "vip": true
+    }
+  ]
+    },
+    {
+      "name": "Youtube",
+      "bundle": "com.google.ios.youtube",
+      "icon": "img/icon/Youtube.png",
+      "banner": "img/banner/Youtube.png",
+      "features":  [
+        "Mở khoá Premium"
+    ],
+      "versions":[
+    {
+      "version":"17.28.2",
+      "link":"https://link4m.com/vEeMcjS"
+    },
+    {
+      "version":"17.28.2",
+      "link":"https://www.mediafire.com/file/quoswxfi376oyqv/YouTube_17.28.2_YoutubeX_TQM.ipa/file",
+      "vip": true
+    },
+    {
+      "version":"19.20.2",
+      "link":"https://link4m.com/xT2EjrF"
+    },
+    {
+      "version":"19.20.2",
+      "link":"https://www.mediafire.com/file/9ifui9tvrxjhfkb/YouTube_19.20.2_YT5.2b4_TQM.ipa/file",
+      "vip": true
+    },
+    {
+      "version":"21.20.4",
+      "link":"https://link4m.com/EXOHN"
+    }
+  ]
+    },
+    {
+      "name": "Widgy",
+      "bundle": "com.woodsign.Widgy",
+      "icon": "img/icon/Widgy.png",
+      "banner": "img/banner/Widgy.png",
+      "features":  [
+        "Mở khoá Premium",
+        "Hỗ trợ Trollstore"
+    ],
+      "versions":[
+    {
+      "version":"3.2.1",
+      "link":"https://link4m.net/5zMSs62H"
+    },
+    {
+      "version":"3.2.1",
+      "link":"https://www.mediafire.com/file/cqlgspewabfvxk3/Widgy_3.2.1-TQM.ipa/file",
+      "vip": true
+    },
+    {
+      "version":"26.1.1",
+      "link":"https://link4m.net/umAgw1gL"
+    },
+    {
+      "version":"26.1.1",
+      "link":"https://www.mediafire.com/file/fyki36us07z5s7a/Widgy_26.1.1-TQM.ipa/file",
+      "vip": true
+    }
+  ]
+    },
+    {
+      "name": "Aloha",
+      "bundle": "com.alohabrowser.alohabrowser",
+      "icon": "img/icon/Aloha.png",
+      "banner": "img/banner/Aloha.png",
+      "features":  [
+        "Mở khoá Premium"
+    ],
+      "versions":[
+    {
+      "version":"8.1.1",
+      "link":"https://link4m.net/fgGTcJgL"
+    },
+    {
+      "version":"8.1.1",
+      "link":"https://www.mediafire.com/file/mm4udt5rbkv2yhq/Aloha_7.5.1-TQM.ipa/file",
+      "vip": true
+    }
+  ]
+    },
+    {
+      "name": "Facebook",
+      "bundle": "com.facebook.Facebook",
+      "icon": "img/icon/Facebook.png",
+      "banner": "img/banner/Facebook.png",
+      "features":  [
+        "Ứng dụng nhân bản",
+        "Chặn QC",
+        "Hỗ trợ tải Video HD"
+    ],
+      "versions":[
+    {
+      "version":"487.0.0",
+      "link":"https://link4m.com/Lxtzve"
+    },
+    {
+      "version":"487.0.0",
+      "link":"https://www.mediafire.com/file/0kqs2mnvgvovqoz/Facebook2_487.0.0-TQM.ipa/file",
+      "vip": true
+    }
+  ]
+    },
+    {
+      "name": "Zalo",
+      "bundle": "vn.com.vng.zingalo",
+      "icon": "img/icon/Zalo.png",
+      "banner": "img/banner/Zalo.png",
+      "features":  [
+        "Ứng dụng nhân bản",
+        "VIP có thông báo"
+    ],
+      "versions":[
+    {
+      "version":"26.03.01.1",
+      "link":"https://link4m.com/qF0rrw"
+    },
+    {
+      "version":"26.03.01.1",
+      "link":"https://www.mediafire.com/file/h0pnn2i75usns9c/Jetpack2-TQM.ipa/file",
+      "vip": true
+    }
+  ]
+    },
+    {
+      "name": "Meitu",
+      "bundle": "com.meitu.mtxx",
+      "icon": "img/icon/Meitu.png",
+      "banner": "img/banner/Meitu.png",
+      "features":  [
+        "Mở khoá Premium"
+    ],
+      "versions":[
+    {
+      "version":"11.11.6",
+      "link":"https://link4m.com/GDCx0"
+    },
+    {
+      "version":"11.11.6",
+      "link":"https://www.mediafire.com/file/7h411a8jppj1ff3/Meitu_11.11.6-TQM.ipa/file",
+      "vip": true
+    }
+  ]
+    },
+    {
+      "name": "Camera 360",
+      "bundle": "com.vstudio.camera360",
+      "icon": "img/icon/Camera360.png",
+      "banner": "img/banner/Camera360.png",
+      "features":  [
+        "Mở khoá Premium"
+    ],
+      "versions":[
+    {
+      "version":"10.02.20",
+      "link":"https://link4m.org/Ji07uo9"
+    },
+    {
+      "version":"10.02.20",
+      "link":"https://www.mediafire.com/file/7v0r8e9b29xi21u/Camera360_10.02.20-TQM.ipa/file",
+      "vip": true
+    }
+  ]
+    },
+    {
+      "name": "VivaVideo",
+      "bundle": "com.quvideo.XiaoYing",
+      "icon": "img/icon/VivaVideo.png",
+      "banner": "img/banner/VivaVideo.png",
+      "features":  [
+        "Mở khoá Premium"
+    ],
+      "versions":[
+    {
+      "version":"9.21.5",
+      "link":"https://link4m.com/7woQjj1F"
+    },
+    {
+      "version":"9.21.5",
+      "link":"https://www.mediafire.com/file/b9u7zh6bymmwgtc/VivaVideo_9.21.5-TQM.ipa/file",
+      "vip": true
+    }
+  ]
+    }
+  ]
