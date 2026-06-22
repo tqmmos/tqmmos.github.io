@@ -2,34 +2,11 @@ body{
 margin:0;
 padding-top:72px;
 font-family:'TQM',sans-serif;
-background:rgba(0,0,0,0.2);
-backdrop-filter:blur(35px) saturate(180%);
--webkit-backdrop-filter:blur(35px) saturate(180%);
+background:rgba(0,0,0,0.2)!important;
+backdrop-filter:blur(10px);
 overflow-y:auto;
 -webkit-overflow-scrolling:touch;
 overscroll-behavior-y:contain;
-}
-
-body.modal-open{
-    position: fixed;
-    overflow: hidden;
-
-    left: 0;
-    right: 0;
-
-    width: 100%;
-    height: 100%;
-
-    touch-action: none;
-
-    overscroll-behavior: none;
-}
-
-
-
-.modal{
-    overflow-y:auto;
-    -webkit-overflow-scrolling:touch;
 }
 
 .card,
@@ -84,6 +61,13 @@ margin:10px;
 padding:12px;
 font-weight:bold;
 border-radius:24px;
+font-size:18px;
+}
+
+.title-row{
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
 
 .list{
@@ -154,13 +138,12 @@ font-size:12px;
 }
 
 .vip-info{
-  margin:10px 0;
-  padding:10px;
-  border-radius:12px;
-  background:#f5f5f5;
-  text-align:center;
-  font-size:14px;
-  line-height:1.6;
+margin:10px 0;
+padding:10px;
+border-radius:12px;
+text-align:center;
+font-size:14px;
+line-height:1.6;
 }
 
 #vipModal{
@@ -294,7 +277,7 @@ align-items:center;
 opacity:0;
 visibility:hidden;
 transition:opacity .2s ease;
-background:rgba(0,0,0,.22)!important;
+background:rgba(0,0,0,0.2)!important;
 backdrop-filter:blur(10px);
 z-index:9999;
 }
@@ -366,46 +349,36 @@ padding:10px 0;
 }
 
 .action-buttons{
-display:flex;
-gap:12px;
-margin-top:16px;
-}
-
-.btn-download{
-flex:1;
-color:white;
-border:none;
-padding:14px;
-font-weight:700;
-font-size:16px;
-}
-
-.action-buttons{
-display:flex;
+display:grid;
 gap:12px;
 margin-top:16px;
 width:100%;
 }
 
+{
+background:linear-gradient(45deg,#ff6ec4,#7873f5);
+}
+
 .btn-download,.btn-feature,.btn-close{
+color:#fff;
+border:none;
 flex:1 !important;
 height:58px;
 padding:0 !important;
 display:flex;
 align-items:center;
 justify-content:center;
-font-size:12px;
+font-size:13px;
 font-weight:700;
-border-radius:24px;
+border-radius:20px;
 }
 
 .app-stats{
 display:flex;
 justify-content:space-around;
-background:#f7f7f7;
 padding:10px;
-border-radius:12px;
 margin:12px 0;
+border-radius:20px;
 }
 
 .app-banner{
@@ -436,12 +409,6 @@ height:70px;
 background:linear-gradient(135deg,#00c6ff,#0072ff);
 border:2px solid rgba(255,255,255,.45);
 border-radius:20px;
-}
-
-.title-row{
-display:flex;
-justify-content:space-between;
-align-items:center;
 }
 
 .more-btn{
@@ -775,7 +742,6 @@ font-weight:700;
 
 }
 
-/* iPhone landscape */
 @media screen
 and (orientation:landscape)
 and (max-width:999px){
@@ -787,7 +753,6 @@ and (max-width:999px){
 
 }
 
-/* iPad landscape */
 @media screen
 and (orientation:landscape)
 and (min-width:1000px){
@@ -798,8 +763,6 @@ and (min-width:1000px){
   }
 
 }
-
-/* iPad landscape icon lớn hơn */
 @media screen
 and (orientation:landscape)
 and (min-width:1000px){
@@ -860,22 +823,22 @@ filter:brightness(.96);
 
 /* ===== Liquid Glass iOS 26 ===== */
 
-.app-banner,.card,.title,.version-card,.more-header,
+.vip-info,.app-stats,.feature-card,.app-banner,.card,.title,.version-card,.more-header,
 .modal-content,
 .vip-popup,
-.version-popup,.vip-close,#closeVipBtn,.btn-close,.top-nav{
+.version-popup,.vip-close,#closeVipBtn,.top-nav{
 background:linear-gradient(180deg,rgba(255,255,255,.55),rgba(255,255,255,.18)) !important;
-backdrop-filter:blur(35px) saturate(180%);
--webkit-backdrop-filter:blur(35px) saturate(180%);
+backdrop-filter:blur(10px) saturate(180%);
+-webkit-backdrop-filter:blur(10px) saturate(180%);
 border:1px solid rgba(255,255,255,.45);
 box-shadow:inset 0 1px 0 rgba(255,255,255,.8), inset 0 -1px 0 rgba(255,255,255,.15), 0 8px 30px rgba(0,0,0,.12);
 
 }
 
-.btn,.btn-feature,.more-btn,.close-more-btn,.app-row-btn,.row-btn,.btn-download,.version-btn,.version-card button,.close-more-circle{
-background:linear-gradient(45deg,#ff6ec4,#7873f5);
-backdrop-filter:blur(35px) saturate(180%);
--webkit-backdrop-filter:blur(35px) saturate(180%);
+.btn-close,.btn-feature,.btn,.more-btn,.close-more-btn,.app-row-btn,.row-btn,.btn-download,.version-btn,.version-card button,.close-more-circle{
+background:linear-gradient(135deg,#00c6ff,#0072ff);
+backdrop-filter:blur(10px) saturate(180%);
+-webkit-backdrop-filter:blur(10px) saturate(180%);
 border:1px solid rgba(255,255,255,.45);
 box-shadow:inset 0 1px 0 rgba(255,255,255,.8), inset 0 -1px 0 rgba(255,255,255,.15), 0 8px 30px rgba(0,0,0,.12);
 border-radius:20px;
@@ -885,20 +848,8 @@ border-radius:20px;
 padding:14px;
 margin-bottom:10px;
 border-radius:14px;
-background:rgba(255,255,255,.7);
-backdrop-filter:blur(15px);
--webkit-backdrop-filter:blur(15px);
-border:1px solid rgba(255,255,255,.5);
 font-size:15px;
 text-align:left;
-}
-
-.btn-feature{
-flex:1 !important;
-border:none;
-color:#fff;
-font-weight:700;
-background:linear-gradient(135deg,#00c6ff,#0072ff);
 }
 
 .feature-box{

@@ -1,5 +1,106 @@
 [
     {
+      "name": "PSExpress",
+      "bundle": "com.adobe.PSMobile",
+      "icon": "img/icon/PSExpress.png",
+      "banner": "img/banner/PSExpress.png",
+      "features":  [
+        "Mở khoá Premium"
+    ],
+      "versions": [
+    {
+      "version":"25.6.0",
+      "link":"https://link4m.org/SlbcNqe"
+    },
+    {
+      "version":"25.6.0",
+      "link":"https://www.mediafire.com/file/1x96ebpo4evtkma/PS_Express_25.6.0-TQM.ipa/file",
+      "vip": true
+    }
+  ]
+    },
+    {
+      "name": "Lightroom",
+      "bundle": "com.adobe.lrmobilephone",
+      "icon": "img/icon/Lightroom.png",
+      "banner": "img/banner/Lightroom.png",
+      "features":  [
+        "Mở khoá Premium"
+    ],
+      "versions": [
+    {
+      "version":"10.0.1",
+      "link":"https://link4m.com/90v8qO"
+    },
+    {
+      "version":"10.0.1",
+      "link":"https://www.mediafire.com/file/beqbkz2erdzm222/Lightroom_10.0.1-TQM.ipa/file",
+      "vip": true
+    }
+  ]
+    },
+    {
+      "name": "SNOW",
+      "bundle": "com.campmobile.snow",
+      "icon": "img/icon/SNOW.png",
+      "banner": "img/banner/SNOW.png",
+      "features":  [
+        "Mở khoá Premium"
+    ],
+      "versions": [
+    {
+      "version":"14.0.11",
+      "link":"https://link4m.net/Ji07uo9"
+    },
+    {
+      "version":"14.0.11",
+      "link":"https://www.mediafire.com/file/d03eh4u1m61egaz/BeautyPlus_7.8.102-TQM.ipa/file",
+      "vip": true
+    }
+  ]
+    },
+    {
+      "name": "BeautyPlus",
+      "bundle": "com.commsource.BeautyPlus",
+      "icon": "img/icon/BeautyPlus.png",
+      "banner": "img/banner/BeautyPlus.png",
+      "features":  [
+        "Mở khoá Premium"
+    ],
+      "versions": [
+    {
+      "version":"7.8.102",
+      "link":"https://link4m.org/JAPqDWrc"
+    },
+    {
+      "version":"7.8.102",
+      "link":"https://www.mediafire.com/file/d03eh4u1m61egaz/BeautyPlus_7.8.102-TQM.ipa/file",
+      "vip": true
+    }
+  ]
+    },
+    {
+      "name": "Videos Star",
+      "bundle": "com.frontierdesign.videostar",
+      "icon": "img/icon/VideosStar.png",
+      "banner": "img/banner/VideosStar.png",
+      "features":  [
+        "Mở khoá Premium",
+        "Xóa embedded mobile trên Esign trước khi cài đặt!"
+    ],
+      "versions": [
+    {
+      "version":"13.1.7",
+      "link":"https://link4m.com/C5wAPpX"
+    },
+    {
+      "version":"13.1.7",
+      "link":"https://www.mediafire.com/file/mm4udt5rbkv2yhq/Aloha_7.5.1-TQM.ipa/file",
+      "vip": true
+    }
+  ]
+    },
+    {
       "name": "BeautyCam",
       "bundle": "com.meitu.myxj",
       "icon": "img/icon/BeautyCam.png",
@@ -14,7 +115,7 @@
     },
     {
       "version":"12.5.20",
-      "link":"https://www.mediafire.com/file/mm4udt5rbkv2yhq/Aloha_7.5.1-TQM.ipa/file",
+      "link":"https://www.mediafire.com/file/2zwiqt0fs59ngia/BeautyCam_12.5.20-TQM.ipa/file",
       "vip": true
     }
   ]
@@ -34,7 +135,7 @@
     },
     {
       "version":"14.0.16",
-      "link":"https://www.mediafire.com/file/mm4udt5rbkv2yhq/Aloha_7.5.1-TQM.ipa/file",
+      "link":"https://www.mediafire.com/file/thl30ya5ki6avl8/B612_14.0.16-TQM.ipa/file",
       "vip": true
     }
   ]
